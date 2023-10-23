@@ -168,9 +168,7 @@ class HJSONStringifier
             $res = $this->eol . $gap . "'''";
             for ($i = 0; $i < count($a); $i++) {
                 $res .= $this->eol;
-                if ($a[$i]) {
-                    $res .= $gap . $a[$i];
-                }
+                $res .= $gap . $a[$i];
             }
             return $res . $this->eol . $gap . "'''";
         }
